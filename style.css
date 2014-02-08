@@ -1,0 +1,9 @@
+#tweets {
+	float: right;
+	width: 70%;
+}
+
+#controls {
+	float: left;
+	width: 30%;
+}
