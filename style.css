@@ -23,6 +23,7 @@ body {
 #icon {
 	float: left;
 	height: 90%;
+	padding: 1%;
 }
 
 .sidebar {
@@ -49,6 +50,7 @@ body {
 	font-size: 16px;
 	color: #404040;
 	font-weight: bold;
+	margin: 5% 0%;
 }
 
 #controls {
@@ -62,11 +64,24 @@ body {
 
 #user {
 	width: 87%;
-	background-color: #EAFBF2;
+	background-color: #404040;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin: 3%;
 	padding: 3%;
+	color: #EAFBF2;
+}
+
+#user > h3 {
+	text-align: center;
+}
+
+#user-pic {
+	width: 20%;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 2% 37%;
+	border: 5px #FFFFFF solid;
 }
 
 @media (max-width: 700px) {
