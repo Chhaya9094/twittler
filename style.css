@@ -1,9 +1,88 @@
+body {
+	background-color: #94E9BF;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	color: #404040;
+	margin: 0px;
+}
+
+.container {
+	width: 76%;
+	margin: 0 12%;
+}
+
+#header {
+	background-color: #58AD84;
+}
+
+#header > h1 {
+	margin: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+#icon {
+	float: left;
+	height: 90%;
+}
+
+.sidebar {
+	float: left;
+	width: 30%;
+	margin: 1%;
+}
+
 #tweets {
 	float: right;
-	width: 70%;
+	width: 60%;
+	background-color: #EAFBF2;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 2%;
+	padding: 1%;
+}
+
+#new-tweets {
+	width: 100%;
+	background-color: #58AD84;
+	border: none;
+	height: 40px;
+	font-size: 16px;
+	color: #404040;
+	font-weight: bold;
 }
 
 #controls {
-	float: left;
-	width: 30%;
+	width: 87%;
+	background-color: #EAFBF2;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 3%;
+	padding: 3%;
+}
+
+#user {
+	width: 87%;
+	background-color: #EAFBF2;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 3%;
+	padding: 3%;
+}
+
+@media (max-width: 700px) {
+
+	.sidebar {
+		width: 96%;
+		margin: 2%;
+		padding: 2%;
+		float: none;
+	}
+
+	#tweets {
+		width: 96%;
+		margin: 2%;
+		padding: 2%;
+		float: none;
+	}
+
 }
