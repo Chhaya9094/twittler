@@ -5,6 +5,14 @@ body {
 	margin: 0px;
 }
 
+h4 {
+	margin: 0px;
+}
+
+h2 {
+	padding: 0% 2%;
+}
+
 .container {
 	width: 76%;
 	margin: 0 12%;
@@ -12,18 +20,19 @@ body {
 
 #header {
 	background-color: #58AD84;
+	 -moz-box-shadow:    0px 0px 7px 0px #404040;
+  	-webkit-box-shadow: 0px 0px 7px 0px #404040;
+  	box-shadow:         0px 0px 7px 0px #404040;
 }
 
 #header > h1 {
 	margin: 0px;
-	width: 100%;
 	text-align: center;
+	color: #9F3E00;
 }
 
 #icon {
-	float: left;
-	height: 90%;
-	padding: 1%;
+	height: 25px;
 }
 
 .sidebar {
@@ -39,6 +48,28 @@ body {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin: 2%;
+}
+
+#tweet-container {
+	padding: 1%;
+}
+
+#handle {
+	font-size: 16px;
+	color: #9F3E00;
+	width: 20%;
+	margin: 0px;
+}
+
+#time {
+	font-size: 12px;
+	float: right;
+	width: 20%;
+	margin: 0px;
+}
+
+#text {
+	margin: 0px;
 	padding: 1%;
 }
 
@@ -62,6 +93,10 @@ body {
 	padding: 3%;
 }
 
+#tweet-form {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
 #user {
 	width: 87%;
 	background-color: #404040;
@@ -81,7 +116,12 @@ body {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	margin: 2% 37%;
-	border: 5px #FFFFFF solid;
+	border: 4px #FFFFFF solid;
+}
+
+#user > span {
+	border-right: 1px #EAFBF2 solid; 
+	padding: 0% 2%;
 }
 
 @media (max-width: 700px) {
@@ -96,7 +136,6 @@ body {
 	#tweets {
 		width: 96%;
 		margin: 2%;
-		padding: 2%;
 		float: none;
 	}
 
