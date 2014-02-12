@@ -32,17 +32,18 @@
         </div>
         <div id="tweets">
             <h2>Tweets</h2>
-            <button id="new-tweets" type="button">Get New Tweets</button>
+            <button id="new-tweets" type="button">See New Tweets</button>
             <div id="tweet-container">
             </div>
         </div>
     </div>
     <script>
         $(document).ready(function () {
+            
             var getTweets = function () {
-                var subIndex = streams.home.length - 1;
-                while (subIndex >= 0) {
-                    var tweet = streams.home[subIndex];
+                var index = streams.home.length - 1;
+                while (index >= 0) {
+                    var tweet = streams.home[index];
                     var $tweet = $('<div id="individual-tweet"><div id="handle"></div><div id="time"></div><p id="text"></p></div>');
 
                     $tweet.find('#handle').text('@' + tweet.user)
@@ -50,18 +51,21 @@
                     $tweet.find('#text').text(tweet.message);
                     $tweet.appendTo($('#tweet-container'));
 
-                    subIndex -= 1;
+                    index -= 1;
                 }
             }
 
             var newTweets = function () {
-                var checkInterval = function () {
+                var newTweetCount = 0;
                     setInterval(function () {
-                        var timeIndex = streams.home.length - 1;
-                        var newTweetCount = subIndex;
-                        $('#new-tweets').text(newTweetCount + ' New Tweets');
+                        newTweetCount = (streams.home.length) - $('#tweet-container > div').length;
+                        if (newTweetCount === 1) {
+                            $('#new-tweets').text('See ' + newTweetCount + ' New Tweet');
+                        } else {
+                            $('#new-tweets').text('See ' + newTweetCount + ' New Tweets');
+                        }
                     }, 3000);
-                }
+                
             }
 
             getTweets();
@@ -71,7 +75,7 @@
             $("#new-tweets").on('click', function () {
                 $('#tweet-container').empty();
                 getTweets();
-                clearInterval(checkInterval);
+                newTweets();
             });
 
             $("#handle").on('click', function () {

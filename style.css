@@ -1,9 +1,5 @@
 body {
 	background-color: #DEF2E6;
-	background-image: url("img/trees.png");
-	background-repeat: no-repeat;
-	background-attachment:fixed;
-	background-size: 100%;
 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	color: #404040;
 	margin: 0px;
