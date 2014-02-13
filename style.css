@@ -74,6 +74,12 @@ h2 {
 	padding: 1%;
 }
 
+#tweets > h2 {
+	float: left;
+	width: 30%;
+	color: #9F3E00;
+}
+
 #new-tweets {
 	width: 100%;
 	background-color: #58AD84;
@@ -88,7 +94,22 @@ h2 {
   	box-shadow:         0px 0px 1px 0px #404040;
 }
 
+#back-home {
+	float: right;
+	width: 30%;
+	background-color: #DEF2E6;
+	border: none;
+	height: 20px;
+	font-size: 12px;
+	color: #404040;
+	margin: 5%;
+}
+
 #new-tweets:hover {
+	background-color: #78D1A6;
+}
+
+#back-home:hover {
 	background-color: #78D1A6;
 }
 
@@ -106,6 +127,18 @@ h2 {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+
+#tweet-button {
+	float: right;
+	width: 30%;
+	background-color: #9F3E00;
+	border: none;
+	height: 20px;
+	font-size: 12px;
+	color: #FFF;
+	margin: 2%;
+}
+
 #user {
 	width: 87%;
 	background-color: #404040;
